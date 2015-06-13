@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   	<string name="ftst">全时速运</string>
+    <string name="app_name">HZHDSW</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="ok">确定</string>
+	<string name="cancel">取消</string>
+	<string name="dlgtv1st">DlgTextView</string>
+	<string name="login">登录</string>
+	<string name="exit">退出</string>
+	<string name="maintv1st">MainTextView</string>
+	<string name="username">工号</string>
+	<string name="account">账户</string>	
+	<string name="password">密码</string>
+	<string name="crtdlgbtn">创建对话框</string>
+	<string name="wrdnpw">记住密码</string>
+	<string name="inputusername">请输入用户名</string>
+	<string name="inputpassword">请输入登录密码</string>
+	<string name="weightfee">入库称重</string>
+	<string name="collectgoods">海外集货</string>
+	<string name="checkorder">中转核单</string>
+	<string name="scattergoods">国内分发</string>
+	<string name="exprsign">快递签收</string>
+	<string name="logout">注销</string>
+	<string name="consignee">收货人</string>
+	<string name="declnum">报关单号</string>
+	<string name="packnum">包裹编号</string>
+	<string name="confirm">确定</string>
+	<string name="exprnum">快递单号</string>	
+	<string name="pieces">件数</string>
+	<string name="goback">&lt;返回</string>
+	<string name="btpair">蓝牙配对</string>
+	<string name="btw_weight">蓝牙称重</string>
+	<string name="goods">品名</string>
+	<string name="waybill">运单编号</string>
+	<string name="fttver">版本：1.0.02</string>
+	<string name="exitcode">退出码</string>
+	<string name="hzhscan">宏志扫描</string>
+	<string name="rtnmsg">返回消息</string>
+	
+    <!--  BluetoothChat -->
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving RHFBTW</string>
+    <string name="title_connecting">connecting&#8230;</string>
+    <string name="title_connected_to">connected: </string>
+    <string name="title_not_connected">not connected</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices&#8230;</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+
+    <!-- Options Menu -->
+    <string name="connect">Connect a device</string>
+    <string name="getScale">Get Scale</string>
+    <string name="discoverable">Make discoverable</string>
+    
+    <!-- MainActivity -->
+    <string name="scale">蓝牙称重</string>
+
+    <string name="title">润亨丰称重登录系统</string>
+    <string name="logdlgnm">AndroidLogin</string>
+    <string name="user_name">用户名</string>
+    <string name="user_password">密码</string>
+    <string name="ulogin">登录</string>
+    <string name="second_title">您已成功登录</string>
+    <string name="weight">重量</string>
+<!--  
+    <string name="app_name">BarCodeScan</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="exit">退出</string>
+-->
+	<string name="open_scan">打开扫描</string>
+	<string name="empty">清空</string>
+	 <string name="popup_title">请选择</string>
+    <string name="popup_message">设备退出,你要退出此应用程序吗?</string>
+    <string name="popup_yes">确定</string>
+    <string name="popup_no">取消</string>
+        
+</resources>

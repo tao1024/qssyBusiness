@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowTitleSize="0dip"
+    android:windowNoTitle="true"
+    android:background="#C0C0C0"    
+    android:orientation="vertical" 
+	tools:context=".InputDialog" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:background="#FF0000"
+            android:text="@string/ftst"
+            android:textSize="10pt" 
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@android:color/background_dark"
+            android:text="@string/exitcode" />
+
+        <EditText
+            android:id="@+id/edit_project_new_name"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+        
+    </LinearLayout>
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_project_dialog_sure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_weight="1"
+            android:text="@string/ok" />
+        <Button
+            android:id="@+id/button_project_dialog_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_weight="1"
+            android:text="@string/cancel" />        
+    </LinearLayout>
+
+</LinearLayout>

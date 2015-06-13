@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0C0C0"
+    android:orientation="vertical"
+    tools:context=".ScatterGoodsActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="#FF0000"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btngoback"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF0000"
+            android:gravity="left|center_vertical"
+            android:text="@string/goback"
+            android:textColor="@android:color/white"
+            android:textSize="10pt" />
+
+        <TextView
+            android:id="@+id/cptcnt"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FF0000"
+            android:gravity="center"
+            android:text="@string/exprsign"
+            android:textColor="@android:color/white"
+            android:textSize="10pt" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical" >
+        
+        <TextView
+            android:id="@+id/tvcsgn"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="right|center_vertical"
+            android:text="@string/consignee"
+            android:textColor="@android:color/background_dark" />
+        
+        <EditText
+            android:id="@+id/etcsgn"
+            android:layout_width="240dip"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvcsgn"
+            android:inputType="text" />
+
+        <AutoCompleteTextView
+            android:id="@+id/selcsgn"
+            android:layout_width="240dip"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/etcsgn"
+            android:layout_toRightOf="@id/tvcsgn"
+            android:completionHint="请选择收货人"
+            android:completionThreshold="1"
+            android:dropDownHorizontalOffset="20dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="60dip"
+            android:layout_height="fill_parent"        
+            android:gravity="right|center_vertical"
+            android:text="@string/waybill"
+            android:textColor="@android:color/background_dark" />
+
+        <Spinner
+            android:id="@+id/selwaybill"
+            android:layout_width="240dip"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imagesign"
+            android:layout_width="200dip"
+            android:layout_height="200dip"
+            android:contentDescription="@string/exprsign"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:src="@drawable/no_image" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ok" />
+    
+    <ListView
+        android:id="@+id/lvexprsign"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stackFromBottom="true" >
+    </ListView>
+    
+</LinearLayout>

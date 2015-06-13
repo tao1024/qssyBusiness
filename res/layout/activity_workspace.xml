@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0C0C0"
+    android:orientation="vertical"    
+    tools:context=".WorkSpaceActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="200dip"
+            android:layout_height="fill_parent"
+            android:gravity="right|center_vertical"
+            android:background="#FF0000"
+            android:text="@string/ftst"
+            android:textSize="10pt" 
+            android:textColor="@android:color/white" />
+        
+        <ImageButton
+            android:id="@+id/btpair"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+			android:background="#FF0000"
+            android:gravity="right"
+            style="?android:attr/borderlessButtonStyle"
+            android:contentDescription="@string/btpair"
+            android:scaleType="center"
+            android:src="@drawable/bticon" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/weightfee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/collectgoods"
+            android:scaleType="center"
+            android:src="@drawable/weightfee" />
+    </LinearLayout>
+            
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/collectgoods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/collectgoods"
+            android:scaleType="center"
+            android:src="@drawable/collect" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/checkorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/checkorder"
+            android:scaleType="center"
+            android:src="@drawable/checkorder" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/scattergoods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/scattergoods"
+            android:scaleType="center"
+            android:src="@drawable/scatter" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" 
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/exprsign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/exprsign"
+            android:scaleType="center"
+            android:src="@drawable/exprsign" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/logout"
+            android:scaleType="center"
+            android:src="@drawable/logout" />
+    </LinearLayout>
+    
+</LinearLayout>

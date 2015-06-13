@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dip" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dlgtv1st" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/entry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:inputType="text"
+        android:background="@android:drawable/editbox_background" >
+
+        <requestFocus>
+        </requestFocus>
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/entry"
+        android:layout_below="@+id/entry"
+        android:layout_marginRight="41dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/cancel" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_cancel"
+        android:layout_alignBottom="@+id/btn_cancel"
+        android:layout_alignLeft="@+id/entry"
+        android:layout_marginLeft="59dp"
+        android:text="@string/ok" />
+
+</RelativeLayout>

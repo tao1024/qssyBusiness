@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#C0C0C0"
+    tools:context=".WeightFeeActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"      
+        android:layout_height="40dip"
+        android:background="#FF0000"  
+        android:orientation="horizontal" >
+        
+        <Button
+            android:id="@+id/btngoback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF0000"
+            android:gravity="left|center_vertical"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="@string/goback"
+            android:textSize="10pt" 
+            android:textColor="@android:color/white"/>
+        
+        <TextView
+            android:id="@+id/cptcnt"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:background="#FF0000"
+            android:text="@string/weightfee"
+            android:textSize="10pt"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="60dip"
+            android:layout_height="fill_parent"        
+            android:gravity="right|center_vertical"
+            android:textColor="@android:color/background_dark" 
+            android:text="@string/consignee" />
+
+        <EditText
+            android:id="@+id/etcsgn"
+            android:layout_width="240dip"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </LinearLayout>
+        
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tvcsgn"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"            
+            android:gravity="right|center_vertical"
+            android:textColor="@android:color/background_dark"
+            android:text="@string/exprnum" />
+        
+        <EditText
+            android:id="@+id/etexprnum"
+            android:layout_width="240dip"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_toRightOf="@id/tvcsgn" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="60dip"
+            android:layout_height="fill_parent"        
+            android:gravity="right|center_vertical"
+            android:textColor="@android:color/background_dark"            
+            android:text="@string/weight" />
+
+        <EditText
+            android:id="@+id/etweight"
+            android:layout_width="240dip"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/confirm"/>
+    
+    <Button
+         android:id="@+id/btnMsg"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:textSize="20sp"
+         android:text="扫描反馈消息" />
+
+    <ListView
+        android:id="@+id/lvresult"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stackFromBottom="true" >
+    </ListView>
+	
+</LinearLayout>

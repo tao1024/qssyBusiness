@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0C0C0"
+    android:orientation="vertical"
+    tools:context=".CollectGoodsActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"      
+        android:layout_height="40dip"
+        android:background="#FF0000"  
+        android:orientation="horizontal" >
+        
+        <Button
+            android:id="@+id/btngoback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF0000"
+            android:gravity="left|center_vertical"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="@string/goback"            
+            android:textSize="10pt" 
+            android:textColor="@android:color/white"/>
+        
+        <TextView
+            android:id="@+id/cptcnt"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:background="#FF0000"
+            android:text="@string/collectgoods"
+            android:textSize="10pt" 
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="60dip"
+            android:layout_height="fill_parent"        
+            android:gravity="right|center_vertical"
+            android:textColor="@android:color/background_dark" 
+            android:text="@string/consignee" />
+
+        <EditText
+            android:id="@+id/etcsgn"
+            android:layout_width="240dip"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="60dip"
+            android:layout_height="fill_parent"        
+            android:gravity="right|center_vertical"
+            android:textColor="@android:color/background_dark"
+            android:text="@string/goods" />
+        
+        <LinearLayout
+            android:layout_width="240dip"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            android:fadingEdge="horizontal"
+            android:orientation="vertical" >
+
+            <com.hzh.dsw.ComboBox
+                android:id="@+id/id_combobox"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+        
+	</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="60dip"
+            android:layout_height="fill_parent"        
+            android:gravity="right|center_vertical"
+            android:textColor="@android:color/background_dark"            
+            android:text="@string/weight" />
+
+        <EditText
+            android:id="@+id/etweight"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="30dip"
+            android:layout_height="fill_parent"        
+            android:gravity="right|center_vertical"
+            android:textColor="@android:color/background_dark"            
+            android:text="@string/pieces" />
+
+        <EditText
+            android:id="@+id/etpieces"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="60dip"
+            android:layout_height="fill_parent"        
+            android:gravity="right|center_vertical"
+            android:textColor="@android:color/background_dark" 
+            android:text="@string/declnum" />
+
+        <EditText
+            android:id="@+id/etdeclnum"
+            android:layout_width="240dip"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </LinearLayout>
+    
+    <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="60dip"
+            android:layout_height="fill_parent"        
+            android:gravity="right|center_vertical"
+            android:textColor="@android:color/background_dark" 
+            android:text="@string/exprnum" />
+
+        <EditText
+            android:id="@+id/etexprnum"
+            android:layout_width="240dip"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </LinearLayout> -->
+    
+    <Button
+         android:id="@+id/btnMsg"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:textSize="20sp"
+         android:text="扫描反馈消息" />
+    
+	<ListView
+	    android:id="@+id/lvdeclwgt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stackFromBottom="true" />
+		    
+</LinearLayout>
